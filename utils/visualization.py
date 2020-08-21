@@ -7,7 +7,7 @@ bounding boxes based on object detection results.
 
 import numpy as np
 import cv2
-
+import os
 
 # Constants
 ALPHA = 0.5
@@ -99,4 +99,5 @@ class BBoxVisualization():
             cls_name = self.cls_dict.get(cl, 'CLS{}'.format(cl))
             txt = '{} {:.2f}'.format(cls_name, cf)
             img = draw_boxed_text(img, txt, txt_loc, color)
+            os.system("scrot -e 'mv $f ~/tensorrt-yolo/screenshot'")
         return img
