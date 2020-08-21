@@ -30,6 +30,9 @@ def show_fps(img, fps):
     fps_text = 'FPS: {:.2f}'.format(fps)
     cv2.putText(img, fps_text, (11, 20), font, 1.0, (32, 32, 32), 4, line)
     cv2.putText(img, fps_text, (10, 20), font, 1.0, (240, 240, 240), 1, line)
+    
+    file1 = open("/home/eee/tensorrt-yolo/utils/GPS.txt","r") 
+    cv2.putText(img, file1.read(), (10, 470), font, 1.0, (240, 240, 240), 1, line)
     return img
 
 
