@@ -10,9 +10,9 @@ TensorRT for YOLOv3 with screenshot and beep function as well as GPS Overlay
 5. Credits and Contact
 
 ## 1. Description
-YOLO, “You Look Only Once”, is an algorithm capable of detecting what is in an image and where stuff is, in one pass. It gives the bounding boxes around the detected objects, and it can detect multiple objects at a time. It is able to process up to 45 frames per second with a slight drop in accuracy. Thus making it a very good choice when real-time detection needed, without loss of too much accuracy. It uses darknet as a training frame for custom detection.
+TensorRT is a Software Development Kit that specializes in high performance deep learning. It provides low latency and high throughput for deep learning applications and can import different trained models from various deep learning frameworks for application in TensorRT.
 
-To be able to further push the limits, darknet is being compiled with CUDA, cuDNN and OpenCV to allow for GPU usage. This decreases the training time and increase detection speed and frames.
+It converts Tiny-yolo weights to ONNX weights to TensorRT weights.
 
 ## 2. Architecture of Solution
 Not applicable
