@@ -99,5 +99,5 @@ class BBoxVisualization():
             cls_name = self.cls_dict.get(cl, 'CLS{}'.format(cl))
             txt = '{} {:.2f}'.format(cls_name, cf)
             img = draw_boxed_text(img, txt, txt_loc, color)
-            os.system("scrot ~/tensorrt-yolo/screenshots/%b%d::%H%M%S.jpeg -q100")
+            os.system("scrot ~/tensorrt-yolo/screenshot/%b%d::%H%M%S.jpeg -q100")
         return img
